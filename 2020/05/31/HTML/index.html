@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="html,html5," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="frame框架 首先注意！frame、frameset和noframes已经从HTML5删除。 每份html文档称为一个框架，所以frameset标签将窗口分割为多个框架（即多份html文档）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML个人学习小结">
+<meta property="og:url" content="http://yoursite.com/2020/05/31/HTML/index.html">
+<meta property="og:site_name" content="欢迎光临罗森">
+<meta property="og:description" content="frame框架 首先注意！frame、frameset和noframes已经从HTML5删除。 每份html文档称为一个框架，所以frameset标签将窗口分割为多个框架（即多份html文档）。">
+<meta property="article:published_time" content="2020-05-31T08:24:21.315Z">
+<meta property="article:modified_time" content="2020-05-31T09:12:52.789Z">
+<meta property="article:author" content="罗森店长">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="html5">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/05/31/HTML/"/>
+
+
+
+
+
+  <title>HTML个人学习小结 | 欢迎光临罗森</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">欢迎光临罗森</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Welcom to LAWSON</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/31/HTML/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="罗森店长">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="欢迎光临罗森">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HTML个人学习小结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-31T16:24:21+08:00">
+                2020-05-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/" itemprop="url" rel="index">
+                    <span itemprop="name">技术总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="frame框架"><a href="#frame框架" class="headerlink" title="frame框架"></a>frame框架</h3><ul>
+<li>首先注意！frame、frameset和noframes已经从HTML5删除。</li>
+<li>每份html文档称为一个框架，所以frameset标签将窗口分割为多个框架（即多份html文档）。<a id="more"></a></li>
+<li>需要为不支持框架的浏览器添加&lt;noframes&gt;标签。特别注意：虽然不能将&lt;body&gt;&lt;/body&gt;标签与&lt;frameset&gt;&lt;/frameset&gt;标签同时使用，但是如果添加包含一段文本的&lt;noframes&gt;标签，就必须将这段文字嵌套于&lt;body&gt;&lt;/body&gt;标签内，参考下例：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">"25%,50%,25%"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_a.html"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_b.html"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_c.html"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">noframes</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>您的浏览器无法处理框架！<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">noframes</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">frameset</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小，为了避免这种情况发生，可以在标签中加入：noresize=”noresize”。如下例，a、b框架之间的边框不可调整，而b、c之间的边框仍然是可以调整的：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">"50%,*,25%"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_a.html"</span> <span class="attr">noresize</span>=<span class="string">"noresize"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_b.html"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">"/example/html/frame_c.html"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">frameset</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><ul>
+<li><strong>HTML中”bgcolor”与”background-color”的区别</strong>：<br>bgcolor只是标签属性，而backgroud更多作为css的样式属性，它们俩大多数情况下效果完全相同。但在&lt;p&gt;标签下效果不同，&lt;p&gt;不支持bgcolor属性，只能用style标签添加CSS样式。</li>
+<li><strong>padding和margin的区别</strong>：<br>padding是指该元素边框线以内的距离，设定之后，该元素内部的非漂浮或定位元素都会距离该元素的边框距离该设定的值的长度，不可以设置负值，不报错，但没有效果；margin是指该元素边框线以外的距离，设定之后，该元素的外边距离所设置方向的元素会相应增加或减少，可以设置负值，会向相反方向移动。</li>
+</ul>
+<h3 id="script脚本"><a href="#script脚本" class="headerlink" title="script脚本"></a>script脚本</h3><ul>
+<li>&lt;noscript&gt;标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本。&lt;noscript&gt;元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。只有在浏览器不支持脚本或者禁用脚本时，才会显示noscript元素中的内容：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript"><span class="built_in">document</span>.write(<span class="string">"Hello World!"</span>)</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">noscript</span>&gt;</span>Sorry, your browser does not support JavaScript!<span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>不支持 JavaScript 的浏览器将显示 noscript 元素中的文本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li><strong>如何应对老式浏览器</strong>：<br>如果浏览器压根没法识别&lt;script&gt;标签，那么&lt;script&gt;标签所包含的内容将以文本方式显示在页面上。为了避免这种情况发生，应该将脚本隐藏在注释标签当中。那些老的浏览器（无法识别&lt;script&gt;标签的浏览器）将忽略这些注释，所以不会将标签的内容显示到页面上。而那些新的浏览器将读懂这些脚本并执行它们，即使代码被嵌套在注释标签内：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line">&lt;!-- </span><br><span class="line"><span class="javascript"><span class="built_in">document</span>.write(<span class="string">"Hello World!"</span>) </span></span><br><span class="line"><span class="actionscript"><span class="comment">//--&gt;</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>支持script标签 的浏览器将显示script元素中的文本，不支持的则不会显示"Hello World!"。<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="input输入"><a href="#input输入" class="headerlink" title="input输入"></a>input输入</h3><ul>
+<li><strong>size与maxlength的关系</strong>：<br>size设定文本框的长度，对内容输入长度无限制，maxlength设定文本的最大输入长度。如果size的值小于maxlength的值，当内容超过窗口的长度时会自动滚动；如果size的值大于maxlength的值，超过maxlength长度的内容无法输入。</li>
+<li>&lt;form target=”_blank&gt;，在&lt;input type=”submit”&gt;元素里输入target属性是无效的，应该用formtarget，并且formtarget属性会覆盖&lt;form&gt;元素的target属性。</li>
+<li><strong>method中get和post的区别</strong>：<br>get：（1）是form默认的提交方式 ；（2）如果通过一个超链访问某个地址，是get方式 ；（3）如果在地址栏直接输入某个地址，是get方式 ；（4）提交数据会在浏览器显示出来 ，保密性差，所以不如post安全；（5）不可以用于提交二进制数据，比如上传文件 。<br>post：（1） 必须在form上通过method=”post” 显式指定 ；（2）提交数据不会在浏览器显示出来 ；（3）适合提交大量数据，可以用于提交二进制数据，比如上传文件。</li>
+</ul>
+<h3 id="音频、视频问题总结"><a href="#音频、视频问题总结" class="headerlink" title="音频、视频问题总结"></a>音频、视频问题总结</h3><ul>
+<li>iPhone、iPad不能显示Flash视频。</li>
+<li><strong>&lt;object&gt;和&lt;embed&gt;的区别</strong>：<br>（1）&lt;object&gt;标签是 HTML 4 的标准标签（在HTML 5中依然保留，但是删除了部分属性），&lt;embed&gt;标签是 HTML 5 的新标签，不支持HTML4（新生代，但是老版本的浏览器可能不认识它）；（2）功能上没有太大区别；（3）浏览器兼容性区别：IE只支持对Object的解析；火狐，谷歌，Safari只支持对Embed的解析；（4）格式上的区别：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">​<span class="tag">&lt;<span class="name">embed</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">src</span>=<span class="string">"/i/bookmark.swf"</span> /&gt;</span></span><br><span class="line">​<span class="tag">&lt;<span class="name">object</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">data</span>=<span class="string">"/i/bookmark.swf"</span>&gt;</span><span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>&lt;audio&gt;和&lt;video&gt;支持所有浏览器，不支持HTML4，在老式浏览器是无效的。</li>
+<li><strong>音频最好的解决方法</strong>：<br>HTML 5 + &lt;object&gt; + &lt;embed&gt;（为什么添加两种格式的音频？因为使用了一个 mp3 文件，这样它在 Internet Explorer、Chrome 以及 Safari 中是有效的，为了使这段音频在 Firefox 和 Opera 中同样有效，添加了一个 ogg 类型的文件）。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"/i/song.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"/i/song.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mp3"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">object</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">width</span>=<span class="string">"100"</span> <span class="attr">data</span>=<span class="string">"/i/horse.mp3"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">height</span>=<span class="string">"100"</span> <span class="attr">width</span>=<span class="string">"100"</span> <span class="attr">src</span>=<span class="string">"/i/song.mp3"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">objiect</span>&gt;</span>​</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>音频最简单的解决方法</strong>：JavaScript嵌入雅虎播放器。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/i/song.mp3"</span>&gt;</span>播放 mp3<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"[http://mediaplayer.yahoo.com/js](http://mediaplayer.yahoo.com/js)"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li><strong>视频最好的解决方法</strong>：HTML 5 + &lt;object&gt; + &lt;embed&gt;。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"movie.webm"</span> <span class="attr">type</span>=<span class="string">"video/webm"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">object</span> <span class="attr">data</span>=<span class="string">"movie.mp4"</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"movie.swf"</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="output输出"><a href="#output输出" class="headerlink" title="output输出"></a>output输出</h3><ul>
+<li>W3school上面的output例子不是特别好，应用比较复杂，可以参考下面这一个例子:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>在线计算器<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span> </span><br><span class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">oninput</span>=<span class="string">"x.value=parseInt(a.value)+parseInt(b.value)"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">id</span>=<span class="string">"a"</span>&gt;</span> + </span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"number"</span> <span class="attr">id</span>=<span class="string">"b"</span>&gt;</span> = </span><br><span class="line">    <span class="tag">&lt;<span class="name">output</span> <span class="attr">name</span>=<span class="string">"x"</span> <span class="attr">for</span>=<span class="string">"a b"</span>&gt;</span><span class="tag">&lt;/<span class="name">output</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>注意:<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> Edge 12及更早 IE 版本的浏览器不支持 output 元素。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"># html</a>
+          
+            <a href="/tags/html5/" rel="tag"># html5</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="罗森店长" />
+            
+              <p class="site-author-name" itemprop="name">罗森店长</p>
+              <p class="site-description motion-element" itemprop="description">记录学习点滴</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+                <a href="/archives">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/starkmage" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:zhang_shengjie@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/stark_mage" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#frame框架"><span class="nav-number">1.</span> <span class="nav-text">frame框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式"><span class="nav-number">2.</span> <span class="nav-text">样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#script脚本"><span class="nav-number">3.</span> <span class="nav-text">script脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#input输入"><span class="nav-number">4.</span> <span class="nav-text">input输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音频、视频问题总结"><span class="nav-number">5.</span> <span class="nav-text">音频、视频问题总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#output输出"><span class="nav-number">6.</span> <span class="nav-text">output输出</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">罗森店长</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
