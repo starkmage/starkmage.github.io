@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="欢迎光临罗森">
 <meta property="og:description" content="使用 JS同时接受单引号和双引号，两种表达方式注意区分，1为双引号里套单引号，2为单引号里套双引号：">
 <meta property="article:published_time" content="2020-05-31T11:28:42.425Z">
-<meta property="article:modified_time" content="2020-06-01T11:20:10.295Z">
+<meta property="article:modified_time" content="2020-06-04T08:29:34.347Z">
 <meta property="article:author" content="罗森店长">
 <meta property="article:tag" content="js">
 <meta property="article:tag" content="ES5">
@@ -395,7 +395,7 @@
 <span class="literal">null</span> == <span class="literal">undefined</span>;     <span class="comment">// true</span></code></pre>
 </li>
 <li>字符串检索，indexOf()：从前往后检索；lastIndexOf()：从后往前检索。</li>
-<li><strong>三种提取部分字符串的方法</strong>：<br>1.<strong>slice(start, end)</strong>：参数可以为负，但要注意，用负参数的时候，-1开始计数，小参数在前，大参数在后（var res = str.slice(-13,-7);），如果省略第二个参数，则该方法将裁剪字符串的剩余部分，负值位置不适用 Internet Explorer 8 及其更早版本；<br>2.<strong>substring(start, end)</strong>：无法接受负参数，如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分；<br>3.<strong>substr(start, length)</strong>：第二个参数规定被提取部分的长度，首个参数可以为负，第二个参数不能为负，如果省略了第二个参数，将裁剪字符串的剩余部分。</li>
+<li><strong>三种提取部分字符串的方法</strong>：<br>1.<strong>slice(start, end)</strong>：参数可以为负，但要注意，用负参数的时候，-1开始计数，小参数在前，大参数在后（var res = str.slice(-13,-7);），如果省略第二个参数，则该方法将裁剪字符串的剩余部分，负值位置不适用 Internet Explorer 8 及其更早版本；<br>2.<strong>substring(start, end)</strong>：会把负参数当作0，如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分；<br>3.<strong>substr(start, length)</strong>：第二个参数规定被提取部分的长度，首个参数可以为负，第二个参数不能为负，如果为负，会当作0，如果省略了第二个参数，将裁剪字符串的剩余部分。<br>4.<strong>具体的说，slice()和substring()的第二个参数都是指的最后一个字符后面的位置</strong>。</li>
 <li><strong>替换字符串内容：str.replace(“a”,”b”)，用b替换str中的a</strong>：<br>1.默认地，replace() 只替换第一个匹配到的内容，如需替换所有匹配，需要使用正则表达式的 g 标志；<br>2.默认地，replace() 对大小写敏感，如需执行大小写不敏感的替换，需要使用正则表达式 /i；<br>3.使用正则表达式时不需要加引号！<pre><code class="JS">str = <span class="string">"Please visit Microsoft and Microsoft!"</span>; 
 <span class="keyword">var</span> n = str.replace(<span class="regexp">/Microsoft/g</span>, <span class="string">"W3School"</span>);</code></pre>
 <pre><code class="JS">str = <span class="string">"Please visit Microsoft!"</span>; 
@@ -419,8 +419,11 @@ fullName : <span class="function"><span class="keyword">function</span>(<span cl
 <li><p>字符串可以通过关键词 new 定义为对象，<strong>但不要把字符串创建为对象，它会拖慢执行速度，数值也是同理</strong>！</p>
 <pre><code class="JS"><span class="keyword">var</span> x = <span class="string">"Bill"</span>;
 <span class="keyword">var</span> y = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">"Bill"</span>);
+<span class="keyword">var</span> z = <span class="keyword">new</span> <span class="built_in">String</span>();
+z = <span class="string">"Bill"</span>;
 <span class="comment">// typeof x 将返回 string</span>
-<span class="comment">// typeof y 将返回 object</span></code></pre>
+<span class="comment">// typeof y 将返回 object</span>
+<span class="comment">// typeof z 将返回 string</span></code></pre>
 </li>
 <li><p><strong>js中避免使用new()！new只会使代码复杂化，还可能会产生某些不可预期的结果。</strong></p>
 </li>
@@ -563,7 +566,7 @@ fullName : <span class="function"><span class="keyword">function</span>(<span cl
             
               <div class="site-state-item site-state-posts">
                 <a href="/archives">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -574,7 +577,7 @@ fullName : <span class="function"><span class="keyword">function</span>(<span cl
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
